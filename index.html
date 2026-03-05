@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Small Towne Shoppes | Flea Market & Antique Store in Conway, AR</title>
+    <meta name="description" content="Visit Small Towne Shoppes in Conway, Arkansas. A highly-rated flea market featuring antiques, vintage finds, thrift items, and unique vendor booths. Open Thursday-Sunday.">
+    <meta name="keywords" content="Flea Market Conway AR, Antique store Conway Arkansas, Vintage market near me, Thrift store Conway, Retro collectibles Arkansas">
+    
+    <!-- Schema Markup for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Small Towne Shoppes",
+        "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "1627 E Oak St",
+            "addressLocality": "Conway",
+            "addressRegion": "AR",
+            "postalCode": "72032",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 35.0844,
+            "longitude": -92.4421
+        },
+        "url": "https://smalltowneshoppes.com",
+        "telephone": "+15014728277",
+        "priceRange": "$",
+        "openingHours": ["Th 10:00-18:00", "Fr 10:00-18:00", "Sa 10:00-18:00", "Su 12:00-17:00"],
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.5",
+            "reviewCount": "156"
+        }
+    }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'rustic-cream': '#F5F1E8',
+                        'rustic-brown': '#8B6F47',
+                        'rustic-dark': '#3D3229',
+                        'rustic-orange': '#D4A373',
+                        'rustic-sage': '#A8B5A0',
+                        'warm-white': '#FAF9F6',
+                    },
+                    fontFamily: {
+                        'serif': ['Playfair Display', 'serif'],
+                        'sans': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Styles & Animations */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        .hero-pattern {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .wood-texture {
+            background-image: url('https://www.transparenttextures.com/patterns/wood-pattern.png');
+        }
+
+        .fade-in {
+            animation: fadeIn 0.8s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .slide-in {
+            animation: slideIn 0.6s ease-out;
+        }
+
+        @keyframes slideIn {
+            from { transform: translateX(-100%); }
+            to { transform: translateX(0); }
+        }
+
+        .hover-lift {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .hover-lift:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        .gallery-item {
+            break-inside: avoid;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #F5F1E8;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #8B6F47;
+            border-radius: 5px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #6B5344;
+        }
+
+        /* Mobile Menu Animation */
+        .mobile-menu {
+            transition: transform 0.3s ease-in-out;
+        }
+        .mobile-menu.closed {
+            transform: translateX(100%);
+        }
+        .mobile-menu.open {
+            transform: translateX(0);
+        }
+
+        /* Star Rating */
+        .star-filled { color: #D4A373; }
+        .star-empty { color: #D1D5DB; }
+    </style>
+</head>
+<body class="bg-warm-white text-rustic-dark font-sans antialiased">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-warm-white/95 backdrop-blur-md shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center cursor-pointer" onclick="window.scrollTo(0,0)">
+                    <div class="bg-rustic-brown text-white p-2 rounded-lg mr-3">
+                        <i data-lucide="store" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <h1 class="font-serif text-xl font-bold text-rustic-dark">Small Towne Shoppes</h1>
+                        <p class="text-xs text-rustic-brown tracking-wider">CONWAY, ARKANSAS</p>
+                    </div>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-rustic-dark hover:text-rustic-brown font-medium transition-colors">Home</a>
+                    <a href="#about" class="text-rustic-dark hover:text-rustic-brown font-medium transition-colors">About</a>
+                    <a href="#highlights" class="text-rustic-dark hover:text-rustic-brown font-medium transition-colors">Shop Highlights</a>
+                    <a href="#vendors" class="text-rustic-dark hover:text-rustic-brown font-medium transition-colors">Vendors</a>
+                    <a href="#gallery" class="text-rustic-dark hover:text-rustic-brown font-medium transition-colors">Gallery</a>
+                    <a href="#visit" class="text-rustic-dark hover:text-rustic-brown font-medium transition-colors">Visit</a>
+                    <a href="#contact" class="bg-rustic-brown text-white px-6 py-2 rounded-full hover:bg-rustic-dark transition-colors font-medium">Contact</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-rustic-dark hover:text-rustic-brown focus:outline-none">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu closed fixed top-0 right-0 w-64 h-full bg-warm-white shadow-2xl md:hidden z-50">
+            <div class="p-6">
+                <button id="close-menu-btn" class="absolute top-4 right-4 text-rustic-dark">
+                    <i data-lucide="x" class="w-6 h-6"></i>
+                </button>
+                <div class="mt-8 flex flex-col space-y-4">
+                    <a href="#home" class="text-lg font-medium text-rustic-dark hover:text-rustic-brown">Home</a>
+                    <a href="#about" class="text-lg font-medium text-rustic-dark hover:text-rustic-brown">About</a>
+                    <a href="#highlights" class="text-lg font-medium text-rustic-dark hover:text-rustic-brown">Shop Highlights</a>
+                    <a href="#vendors" class="text-lg font-medium text-rustic-dark hover:text-rustic-brown">Vendors</a>
+                    <a href="#gallery" class="text-lg font-medium text-rustic-dark hover:text-rustic-brown">Gallery</a>
+                    <a href="#visit" class="text-lg font-medium text-rustic-dark hover:text-rustic-brown">Visit</a>
+                    <a href="#contact" class="text-lg font-medium text-rustic-brown">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-pattern min-h-screen flex items-center justify-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/50"></div>
+        
+        <div class="relative z-10 text-center px-4 max-w-5xl mx-auto fade-in">
+            <div class="inline-flex items-center bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 mb-6 border border-white/30">
+                <i data-lucide="star" class="w-4 h-4 text-yellow-400 fill-current mr-2"></i>
+                <span class="text-white text-sm font-medium">4.5 Stars (156 Reviews)</span>
+            </div>
+            
+            <h1 class="font-serif text-5xl md:text-7xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
+                Discover Hidden Treasures<br>
+                <span class="text-rustic-orange">in the Heart of Conway</span>
+            </h1>
+            
+            <p class="text-xl md:text-2xl text-white/90 mb-10 max-w-2xl mx-auto font-light drop-shadow-md">
+                A unique mix of new, retro, thrift, and antique finds waiting to be discovered.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#visit" class="bg-rustic-orange text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-rustic-brown transition-all transform hover:scale-105 shadow-lg flex items-center justify-center gap-2">
+                    <i data-lucide="map-pin" class="w-5 h-5"></i>
+                    Plan Your Visit
+                </a>
+                <a href="#vendors" class="bg-white text-rustic-dark px-8 py-4 rounded-full font-semibold text-lg hover:bg-rustic-cream transition-all transform hover:scale-105 shadow-lg flex items-center justify-center gap-2">
+                    <i data-lucide="users" class="w-5 h-5"></i>
+                    Become a Vendor
+                </a>
+            </div>
+            
+            <div class="mt-12 flex justify-center gap-8 text-white/80">
+                <div class="flex items-center gap-2">
+                    <i data-lucide="clock" class="w-5 h-5"></i>
+                    <span>Open Thu-Sun</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <i data-lucide="map-pin" class="w-5 h-5"></i>
+                    <span>1627 E Oak St</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <i data-lucide="chevron-down" class="w-8 h-8 text-white/70"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-rustic-cream">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="relative">
+                    <div class="absolute -top-4 -left-4 w-24 h-24 bg-rustic-orange/20 rounded-full"></div>
+                    <div class="absolute -bottom-4 -right-4 w-32 h-32 bg-rustic-brown/10 rounded-full"></div>
+                    <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800" alt="Flea Market Interior" class="relative rounded-2xl shadow-2xl w-full object-cover h-[500px]">
+                    <div class="absolute bottom-6 left-6 bg-white p-4 rounded-lg shadow-lg max-w-xs">
+                        <div class="flex items-center gap-2 mb-2">
+                            <i data-lucide="award" class="w-5 h-5 text-rustic-orange"></i>
+                            <span class="font-semibold text-rustic-dark">Community Favorite</span>
+                        </div>
+                        <p class="text-sm text-gray-600">Voted best flea market in Conway for unique finds and friendly atmosphere.</p>
+                    </div>
+                </div>
+                
+                <div>
+                    <span class="text-rustic-brown font-semibold tracking-wider uppercase text-sm">Our Story</span>
+                    <h2 class="font-serif text-4xl md:text-5xl font-bold text-rustic-dark mt-2 mb-6">
+                        Where Community Meets<br>Curated Treasures
+                    </h2>
+                    <div class="space-y-4 text-gray-700 leading-relaxed">
+                        <p>
+                            Small Towne Shoppes isn't just a flea market—it's a community gathering place where nostalgia meets discovery. Located in the heart of Conway, Arkansas, we've created a space where local vendors and treasure hunters come together in a warm, welcoming environment.
+                        </p>
+                        <p>
+                            Our carefully maintained booths showcase an eclectic mix of antiques, retro collectibles, thrift finds, and unique handcrafted items. Each vendor brings their own passion and expertise, creating a shopping experience that's as diverse as our community.
+                        </p>
+                        <p>
+                            Whether you're hunting for vintage vinyl, searching for the perfect antique furniture piece, or browsing through stacks of classic books, you'll find it here—always at prices that respect your budget.
+                        </p>
+                    </div>
+                    
+                    <div class="grid grid-cols-3 gap-6 mt-8 pt-8 border-t border-rustic-brown/20">
+                        <div class="text-center">
+                            <div class="text-3xl font-serif font-bold text-rustic-brown">50+</div>
+                            <div class="text-sm text-gray-600 mt-1">Vendor Booths</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-serif font-bold text-rustic-brown">4.5★</div>
+                            <div class="text-sm text-gray-600 mt-1">Rating</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-serif font-bold text-rustic-brown">10k+</div>
+                            <div class="text-sm text-gray-600 mt-1">Happy Visitors</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What You'll Find Section -->
+    <section id="highlights" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-rustic-brown font-semibold tracking-wider uppercase text-sm">Explore</span>
+                <h2 class="font-serif text-4xl md:text-5xl font-bold text-rustic-dark mt-2">What You'll Find</h2>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">From vintage vinyl to antique furniture, our vendors curate an ever-changing selection of unique items.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Category Cards -->
+                <div class="group bg-rustic-cream rounded-2xl p-8 hover-lift cursor-pointer transition-all">
+                    <div class="w-14 h-14 bg-rustic-brown rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="gem" class="w-7 h-7 text-white"></i>
+                    </div>
+                    <h3 class="font-serif text-2xl font-bold text-rustic-dark mb-3">Antiques & Vintage</h3>
+                    <p class="text-gray-600">Discover timeless pieces with history. From Victorian furniture to mid-century modern decor, each item tells a story.</p>
+                </div>
+
+                <div class="group bg-rustic-cream rounded-2xl p-8 hover-lift cursor-pointer transition-all">
+                    <div class="w-14 h-14 bg-rustic-orange rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="disc" class="w-7 h-7 text-white"></i>
+                    </div>
+                    <h3 class="font-serif text-2xl font-bold text-rustic-dark mb-3">Retro & Collectibles</h3>
+                    <p class="text-gray-600">Nostalgic treasures from every era. Vinyl records, vintage toys, comic books, and memorabilia that spark joy.</p>
+                </div>
+
+                <div class="group bg-rustic-cream rounded-2xl p-8 hover-lift cursor-pointer transition-all">
+                    <div class="w-14 h-14 bg-rustic-sage rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="shirt" class="w-7 h-7 text-white"></i>
+                    </div>
+                    <h3 class="font-serif text-2xl font-bold text-rustic-dark mb-3">Thrift Finds</h3>
+                    <p class="text-gray-600">Sustainable fashion and home goods at unbeatable prices. One person's pre-loved item is your new favorite find.</p>
+                </div>
+
+                <div class="group bg-rustic-cream rounded-2xl p-8 hover-lift cursor-pointer transition-all">
+                    <div class="w-14 h-14 bg-rustic-brown rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="book-open" class="w-7 h-7 text-white"></i>
+                    </div>
+                    <h3 class="font-serif text-2xl font-bold text-rustic-dark mb-3">Books & Kids Bundles</h3>
+                    <p class="text-gray-600">Literary treasures for all ages. Classic novels, children's books, educational materials, and bundled deals for families.</p>
+                </div>
+
+                <div class="group bg-rustic-cream rounded-2xl p-8 hover-lift cursor-pointer transition-all">
+                    <div class="w-14 h-14 bg-rustic-orange rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="music" class="w-7 h-7 text-white"></i>
+                    </div>
+                    <h3 class="font-serif text-2xl font-bold text-rustic-dark mb-3">Musical Instruments</h3>
+                    <p class="text-gray-600">From guitars to keyboards, find your next instrument. Vintage amps, accessories, and music gear for every skill level.</p>
+                </div>
+
+                <div class="group bg-rustic-cream rounded-2xl p-8 hover-lift cursor-pointer transition-all">
+                    <div class="w-14 h-14 bg-rustic-sage rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="layout-grid" class="w-7 h-7 text-white"></i>
+                    </div>
+                    <h3 class="font-serif text-2xl font-bold text-rustic-dark mb-3">Unique Vendor Booths</h3>
+                    <p class="text-gray-600">Each booth is a mini-boutique curated by passionate vendors. Handcrafted goods, artisan crafts, and local specialties.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vendor Spotlight Section -->
+    <section id="vendors" class="py-20 bg-rustic-dark text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 wood-texture"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="text-rustic-orange font-semibold tracking-wider uppercase text-sm">Join Our Community</span>
+                    <h2 class="font-serif text-4xl md:text-5xl font-bold mt-2 mb-6">Vendor Spotlight</h2>
+                    <p class="text-gray-300 text-lg mb-6">
+                        Our vendors are the heart of Small Towne Shoppes. We maintain high standards for booth presentation while fostering a supportive community of entrepreneurs and collectors.
+                    </p>
+                    
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check-circle" class="w-6 h-6 text-rustic-orange flex-shrink-0 mt-0.5"></i>
+                            <span>Clean, well-maintained booth spaces</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check-circle" class="w-6 h-6 text-rustic-orange flex-shrink-0 mt-0.5"></i>
+                            <span>Flexible rental terms and affordable rates</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check-circle" class="w-6 h-6 text-rustic-orange flex-shrink-0 mt-0.5"></i>
+                            <span>High foot traffic and loyal customer base</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check-circle" class="w-6 h-6 text-rustic-orange flex-shrink-0 mt-0.5"></i>
+                            <span>Supportive community of fellow vendors</span>
+                        </li>
+                    </ul>
+
+                    <button onclick="openVendorModal()" class="bg-rustic-orange text-white px-8 py-4 rounded-full font-semibold hover:bg-rustic-brown transition-all transform hover:scale-105 shadow-lg flex items-center gap-2">
+                        <i data-lucide="user-plus" class="w-5 h-5"></i>
+                        Interested in Becoming a Vendor?
+                    </button>
+                </div>
+
+                <div class="grid gap-6">
+                    <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
+                        <div class="flex items-center gap-4 mb-4">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100" alt="Vendor" class="w-12 h-12 rounded-full object-cover">
+                            <div>
+                                <h4 class="font-semibold">Sarah's Vintage Corner</h4>
+                                <p class="text-sm text-gray-400">Antiques & Home Decor</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 italic">"Being a vendor here has been incredible. The management is supportive, the customers are wonderful, and there's a real sense of community among vendors."</p>
+                    </div>
+
+                    <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
+                        <div class="flex items-center gap-4 mb-4">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100" alt="Vendor" class="w-12 h-12 rounded-full object-cover">
+                            <div>
+                                <h4 class="font-semibold">Mike's Music Exchange</h4>
+                                <p class="text-sm text-gray-400">Instruments & Records</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 italic">"The foot traffic is consistent and the shoppers are serious buyers. It's the best venue for vintage instruments in Central Arkansas."</p>
+                    </div>
+
+                    <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
+                        <div class="flex items-center gap-4 mb-4">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100" alt="Vendor" class="w-12 h-12 rounded-full object-cover">
+                            <div>
+                                <h4 class="font-semibold">The Book Nook</h4>
+                                <p class="text-sm text-gray-400">Rare Books & Collectibles</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 italic">"I love how organized and clean the space is maintained. It makes such a difference for showcasing delicate items like rare books."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="py-20 bg-rustic-cream">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-rustic-brown font-semibold tracking-wider uppercase text-sm">Testimonials</span>
+                <h2 class="font-serif text-4xl md:text-5xl font-bold text-rustic-dark mt-2">What Our Visitors Say</h2>
+                
+                <!-- Rating Display -->
+                <div class="flex items-center justify-center gap-2 mt-6">
+                    <div class="flex gap-1">
+                        <i data-lucide="star" class="w-8 h-8 text-rustic-orange fill-current"></i>
+                        <i data-lucide="star" class="w-8 h-8 text-rustic-orange fill-current"></i>
+                        <i data-lucide="star" class="w-8 h-8 text-rustic-orange fill-current"></i>
+                        <i data-lucide="star" class="w-8 h-8 text-rustic-orange fill-current"></i>
+                        <i data-lucide="star-half" class="w-8 h-8 text-rustic-orange fill-current"></i>
+                    </div>
+                    <span class="text-2xl font-bold text-rustic-dark ml-2">4.5</span>
+                    <span class="text-gray-600 ml-2">(156 Reviews)</span>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover-lift">
+                    <div class="flex gap-1 mb-4">
+                        <i data-lucide="star" class="w-5 h-5 text-rustic-orange fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-rustic-orange fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-rustic-orange fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-rustic-orange fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-rustic-orange fill-current"></i>
+                    </div>
+                    <p class="text-gray-700 mb-6 italic">"Super friendly staff and a high selection of merchandise. You never know what you'll find, but you know it'll be interesting!"</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-rustic-brown rounded-full flex items-center justify-center text-white font-bold">JD</div>
+                        <div>
+                            <div class="font-semibold text-rustic-dark">John D.</div>
+                            <div class="text-sm text-gray-500">Local Guide</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover-lift">
+                    <div class="flex gap-1 mb-4">
+                        <i data-lucide="star" class="w-5 h-5 text-rustic-orange fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-rustic-orange fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-rustic-orange fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-rustic-orange fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-rustic-orange fill-current"></i>
+                    </div>
+                    <p class="text-gray-700 mb-6 italic">"Great mix of new, retro, and antique items at reasonable prices. I've furnished half my apartment with finds from here!"</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-rustic-orange rounded-full flex items-center justify-center text-white font-bold">MS</div>
+                        <div>
+                            <div class="font-semibold text-rustic-dark">Maria S.</div>
+                            <div class="text-sm text-gray-500">Verified Visitor</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover-lift">
+                    <div class="flex gap-1 mb-4">
+                        <i data-lucide="star" class="w-5 h-5 text-rustic-orange fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-rustic-orange fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-rustic-orange fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-rustic-orange fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-gray-300"></i>
+                    </div>
+                    <p class="text-gray-700 mb-6 italic">"Fun place to walk through and find affordable treasures. The vendors are knowledgeable and always willing to chat about their items."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-rustic-sage rounded-full flex items-center justify-center text-white font-bold">RK</div>
+                        <div>
+                            <div class="font-semibold text-rustic-dark">Robert K.</div>
+                            <div class="text-sm text-gray-500">Antique Collector</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-rustic-brown font-semibold tracking-wider uppercase text-sm">Visual Tour</span>
+                <h2 class="font-serif text-4xl md:text-5xl font-bold text-rustic-dark mt-2">Gallery</h2>
+                
+                <!-- Gallery Filters -->
+                <div class="flex flex-wrap justify-center gap-4 mt-8">
+                    <button onclick="filterGallery('all')" class="gallery-filter active px-6 py-2 rounded-full border-2 border-rustic-brown bg-rustic-brown text-white transition-all" data-filter="all">All</button>
+                    <button onclick="filterGallery('interior')" class="gallery-filter px-6 py-2 rounded-full border-2 border-rustic-brown text-rustic-brown hover:bg-rustic-brown hover:text-white transition-all" data-filter="interior">Inside the Market</button>
+                    <button onclick="filterGallery('booths')" class="gallery-filter px-6 py-2 rounded-full border-2 border-rustic-brown text-rustic-brown hover:bg-rustic-brown hover:text-white transition-all" data-filter="booths">Vendor Booths</button>
+                    <button onclick="filterGallery('items')" class="gallery-filter px-6 py-2 rounded-full border-2 border-rustic-brown text-rustic-brown hover:bg-rustic-brown hover:text-white transition-all" data-filter="items">Featured Items</button>
+                </div>
+            </div>
+
+            <div class="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6" id="gallery-grid">
+                <div class="gallery-item group relative overflow-hidden rounded-xl cursor-pointer" data-category="interior">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600" alt="Market Interior" class="w-full h-auto transform group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <span class="text-white font-semibold">Main Aisle</span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item group relative overflow-hidden rounded-xl cursor-pointer" data-category="booths">
+                    <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600" alt="Vendor Booth" class="w-full h-auto transform group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <span class="text-white font-semibold">Vintage Clothing Booth</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item group relative overflow-hidden rounded-xl cursor-pointer" data-category="items">
+                    <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?w=600" alt="Antique Items" class="w-full h-auto transform group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <span class="text-white font-semibold">Antique Collection</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item group relative overflow-hidden rounded-xl cursor-pointer" data-category="interior">
+                    <img src="https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?w=600" alt="Market View" class="w-full h-auto transform group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <span class="text-white font-semibold">Shopping Area</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item group relative overflow-hidden rounded-xl cursor-pointer" data-category="items">
+                    <img src="https://images.unsplash.com/photo-1461360370896-922624d12aa1?w=600" alt="Books" class="w-full h-auto transform group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <span class="text-white font-semibold">Rare Books Section</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item group relative overflow-hidden rounded-xl cursor-pointer" data-category="booths">
+                    <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=600" alt="Furniture Booth" class="w-full h-auto transform group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <span class="text-white font-semibold">Furniture Corner</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visit Us Section -->
+    <section id="visit" class="py-20 bg-rustic-cream">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Info -->
+                <div>
+                    <span class="text-rustic-brown font-semibold tracking-wider uppercase text-sm">Visit Us</span>
+                    <h2 class="font-serif text-4xl md:text-5xl font-bold text-rustic-dark mt-2 mb-6">Plan Your Visit</h2>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4 bg-white p-6 rounded-xl shadow-sm">
+                            <div class="w-12 h-12 bg-rustic-brown/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="map-pin" class="w-6 h-6 text-rustic-brown"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-rustic-dark text-lg">Address</h3>
+                                <p class="text-gray-600">1627 E Oak St<br>Conway, AR 72032<br>United States</p>
+                                <a href="https://maps.google.com/?q=1627+E+Oak+St+Conway+AR+72032" target="_blank" class="text-rustic-brown hover:underline mt-2 inline-flex items-center gap-1 text-sm font-medium">
+                                    Get Directions <i data-lucide="external-link" class="w-4 h-4"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 bg-white p-6 rounded-xl shadow-sm">
+                            <div class="w-12 h-12 bg-rustic-orange/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="clock" class="w-6 h-6 text-rustic-orange"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-rustic-dark text-lg">Hours</h3>
+                                <div class="space-y-1 text-gray-600 mt-2">
+                                    <div class="flex justify-between max-w-xs">
+                                        <span>Thursday</span>
+                                        <span class="font-medium">10:00 AM - 6:00 PM</span>
+                                    </div>
+                                    <div class="flex justify-between max-w-xs">
+                                        <span>Friday</span>
+                                        <span class="font-medium">10:00 AM - 6:00 PM</span>
+                                    </div>
+                                    <div class="flex justify-between max-w-xs">
+                                        <span>Saturday</span>
+                                        <span class="font-medium">10:00 AM - 6:00 PM</span>
+                                    </div>
+                                    <div class="flex justify-between max-w-xs">
+                                        <span>Sunday</span>
+                                        <span class="font-medium">12:00 PM - 5:00 PM</span>
+                                    </div>
+                                    <div class="flex justify-between max-w-xs text-red-500">
+                                        <span>Mon-Wed</span>
+                                        <span class="font-medium">Closed</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 bg-white p-6 rounded-xl shadow-sm">
+                            <div class="w-12 h-12 bg-rustic-sage/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="phone" class="w-6 h-6 text-rustic-sage"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-rustic-dark text-lg">Contact</h3>
+                                <a href="tel:+15014728277" class="text-2xl font-bold text-rustic-brown hover:text-rustic-dark transition-colors block mt-1">
+                                    (501) 472-8277
+                                </a>
+                                <p class="text-sm text-gray-500 mt-1">Click to call</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-rustic-brown text-white p-6 rounded-xl">
+                            <div class="flex items-center gap-3 mb-3">
+                                <i data-lucide="info" class="w-5 h-5"></i>
+                                <h3 class="font-semibold">Parking</h3>
+                            </div>
+                            <p class="text-white/90">Free parking available in front of the building. Additional parking in the rear lot accessible from the side street.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Map -->
+                <div class="h-full min-h-[400px] rounded-2xl overflow-hidden shadow-2xl relative">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3274.1234567890123!2d-92.44412345678901!3d35.08412345678901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzXCsDA1JzAzLjAiTiA5MsKwMjYnMzguOCJX!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0; min-height: 600px;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        class="absolute inset-0"
+                        title="Small Towne Shoppes Location"
+                    ></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-rustic-brown font-semibold tracking-wider uppercase text-sm">FAQ</span>
+                <h2 class="font-serif text-4xl md:text-5xl font-bold text-rustic-dark mt-2">Frequently Asked Questions</h2>
+            </div>
+
+            <div class="space-y-4" id="faq-container">
+                <div class="border border-gray-200 rounded-xl overflow-hidden">
+                    <button class="w-full px-6 py-4 text-left flex justify-between items-center bg-rustic-cream hover:bg-rustic-cream/80 transition-colors" onclick="toggleFaq(this)">
+                        <span class="font-semibold text-rustic-dark">What are your hours?</span>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-rustic-brown transform transition-transform"></i>
+                    </button>
+                    <div class="hidden px-6 py-4 bg-white">
+                        <p class="text-gray-600">We're open Thursday through Sunday: Thursday-Saturday 10:00 AM to 6:00 PM, and Sunday 12:00 PM to 5:00 PM. We're closed Monday through Wednesday to allow our vendors to restock and curate new items.</p>
+                    </div>
+                </div>
+
+                <div class="border border-gray-200 rounded-xl overflow-hidden">
+                    <button class="w-full px-6 py-4 text-left flex justify-between items-center bg-rustic-cream hover:bg-rustic-cream/80 transition-colors" onclick="toggleFaq(this)">
+                        <span class="font-semibold text-rustic-dark">How do I become a vendor?</span>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-rustic-brown transform transition-transform"></i>
+                    </button>
+                    <div class="hidden px-6 py-4 bg-white">
+                        <p class="text-gray-600">We'd love to have you! Simply click the "Become a Vendor" button or contact us directly at (501) 472-8277. We offer various booth sizes with flexible rental terms. All vendors must maintain clean, organized displays and provide quality merchandise.</p>
+                    </div>
+                </div>
+
+                <div class="border border-gray-200 rounded-xl overflow-hidden">
+                    <button class="w-full px-6 py-4 text-left flex justify-between items-center bg-rustic-cream hover:bg-rustic-cream/80 transition-colors" onclick="toggleFaq(this)">
+                        <span class="font-semibold text-rustic-dark">Do you accept card payments?</span>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-rustic-brown transform transition-transform"></i>
+                    </button>
+                    <div class="hidden px-6 py-4 bg-white">
+                        <p class="text-gray-600">Most of our vendors accept major credit cards, though some smaller booths may be cash-only. We recommend bringing some cash just in case, and there's an ATM available on-site for your convenience.</p>
+                    </div>
+                </div>
+
+                <div class="border border-gray-200 rounded-xl overflow-hidden">
+                    <button class="w-full px-6 py-4 text-left flex justify-between items-center bg-rustic-cream hover:bg-rustic-cream/80 transition-colors" onclick="toggleFaq(this)">
+                        <span class="font-semibold text-rustic-dark">Are prices negotiable?</span>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-rustic-brown transform transition-transform"></i>
+                    </button>
+                    <div class="hidden px-6 py-4 bg-white">
+                        <p class="text-gray-600">Many vendors are open to reasonable offers, especially for multiple items or higher-priced pieces. Don't be afraid to ask politely! However, please respect that some items are priced fairly and firm.</p>
+                    </div>
+                </div>
+
+                <div class="border border-gray-200 rounded-xl overflow-hidden">
+                    <button class="w-full px-6 py-4 text-left flex justify-between items-center bg-rustic-cream hover:bg-rustic-cream/80 transition-colors" onclick="toggleFaq(this)">
+                        <span class="font-semibold text-rustic-dark">Is there parking available?</span>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-rustic-brown transform transition-transform"></i>
+                    </button>
+                    <div class="hidden px-6 py-4 bg-white">
+                        <p class="text-gray-600">Yes! We have free parking available directly in front of the building. There's also additional parking in our rear lot accessible from the side street. Handicap accessible parking spaces are available close to the entrance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-rustic-dark text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-5 wood-texture"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div>
+                    <span class="text-rustic-orange font-semibold tracking-wider uppercase text-sm">Get In Touch</span>
+                    <h2 class="font-serif text-4xl md:text-5xl font-bold mt-2 mb-6">Contact Us</h2>
+                    <p class="text-gray-300 text-lg mb-8">
+                        Have questions about our vendors, interested in renting a booth, or just want to say hello? We'd love to hear from you.
+                    </p>
+
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center">
+                                <i data-lucide="phone" class="w-6 h-6 text-rustic-orange"></i>
+                            </div>
+                            <div>
+                                <div class="text-sm text-gray-400">Phone</div>
+                                <a href="tel:+15014728277" class="text-xl font-semibold hover:text-rustic-orange transition-colors">(501) 472-8277</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center">
+                                <i data-lucide="map-pin" class="w-6 h-6 text-rustic-orange"></i>
+                            </div>
+                            <div>
+                                <div class="text-sm text-gray-400">Address</div>
+                                <p class="text-xl font-semibold">1627 E Oak St, Conway, AR</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center">
+                                <i data-lucide="clock" class="w-6 h-6 text-rustic-orange"></i>
+                            </div>
+                            <div>
+                                <div class="text-sm text-gray-400">Hours</div>
+                                <p class="text-xl font-semibold">Thu-Sun: 10AM-6PM</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="mt-12">
+                        <h3 class="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-4">Follow Us</h3>
+                        <div class="flex gap-4">
+                            <a href="#" class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center hover:bg-rustic-orange transition-colors" aria-label="Facebook">
+                                <i data-lucide="facebook" class="w-6 h-6"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center hover:bg-rustic-orange transition-colors" aria-label="Instagram">
+                                <i data-lucide="instagram" class="w-6 h-6"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center hover:bg-rustic-orange transition-colors" aria-label="Twitter">
+                                <i data-lucide="twitter" class="w-6 h-6"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="bg-white rounded-2xl p-8 text-rustic-dark">
+                    <h3 class="font-serif text-2xl font-bold mb-6">Send us a Message</h3>
+                    <form id="contact-form" class="space-y-4" onsubmit="handleContactSubmit(event)">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                            <input type="text" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-rustic-brown focus:ring-2 focus:ring-rustic-brown/20 outline-none transition-all" placeholder="Your name">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                            <input type="email" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-rustic-brown focus:ring-2 focus:ring-rustic-brown/20 outline-none transition-all" placeholder="your@email.com">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                            <textarea rows="4" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-rustic-brown focus:ring-2 focus:ring-rustic-brown/20 outline-none transition-all resize-none" placeholder="How can we help you?"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-rustic-brown text-white py-4 rounded-lg font-semibold hover:bg-rustic-dark transition-colors flex items-center justify-center gap-2">
+                            <i data-lucide="send" class="w-5 h-5"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-rustic-dark border-t border-white/10 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="bg-rustic-brown text-white p-2 rounded-lg">
+                            <i data-lucide="store" class="w-5 h-5"></i>
+                        </div>
+                        <span class="font-serif text-lg font-bold text-white">Small Towne Shoppes</span>
+                    </div>
+                    <p class="text-gray-400 text-sm">Conway's favorite destination for antiques, vintage finds, and unique treasures.</p>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="#about" class="hover:text-rustic-orange transition-colors">About Us</a></li>
+                        <li><a href="#highlights" class="hover:text-rustic-orange transition-colors">Shop Highlights</a></li>
+                        <li><a href="#vendors" class="hover:text-rustic-orange transition-colors">Become a Vendor</a></li>
+                        <li><a href="#gallery" class="hover:text-rustic-orange transition-colors">Gallery</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Visit</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li>1627 E Oak St</li>
+                        <li>Conway, AR 72032</li>
+                        <li><a href="tel:+15014728277" class="hover:text-rustic-orange transition-colors">(501) 472-8277</a></li>
+                        <li>Thu-Sun: 10AM-6PM</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Newsletter</h4>
+                    <p class="text-gray-400 text-sm mb-4">Subscribe for updates on new vendors and special events.</p>
+                    <form class="flex gap-2" onsubmit="event.preventDefault(); alert('Thanks for subscribing!');">
+                        <input type="email" placeholder="Email" class="flex-1 px-3 py-2 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-500 focus:outline-none focus:border-rustic-orange">
+                        <button type="submit" class="bg-rustic-orange text-white px-4 py-2 rounded-lg hover:bg-rustic-brown transition-colors">
+                            <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-gray-500 text-sm">&copy; 2024 Small Towne Shoppes. All rights reserved.</p>
+                <div class="flex gap-6 text-sm text-gray-500">
+                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Vendor Modal -->
+    <div id="vendor-modal" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 hidden items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-md w-full p-8 relative transform scale-95 opacity-0 transition-all duration-300" id="vendor-modal-content">
+            <button onclick="closeVendorModal()" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600">
+                <i data-lucide="x" class="w-6 h-6"></i>
+            </button>
+            
+            <div class="text-center mb-6">
+                <div class="w-16 h-16 bg-rustic-brown/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i data-lucide="store" class="w-8 h-8 text-rustic-brown"></i>
+                </div>
+                <h3 class="font-serif text-2xl font-bold text-rustic-dark">Become a Vendor</h3>
+                <p class="text-gray-600 mt-2">Join our community of unique sellers</p>
+            </div>
+
+            <form class="space-y-4" onsubmit="handleVendorSubmit(event)">
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Business Name</label>
+                    <input type="text" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-rustic-brown focus:ring-2 focus:ring-rustic-brown/20 outline-none">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
+                    <input type="text" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-rustic-brown focus:ring-2 focus:ring-rustic-brown/20 outline-none">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Phone</label>
+                    <input type="tel" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-rustic-brown focus:ring-2 focus:ring-rustic-brown/20 outline-none">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                    <input type="email" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-rustic-brown focus:ring-2 focus:ring-rustic-brown/20 outline-none">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Type of Merchandise</label>
+                    <textarea rows="3" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-rustic-brown focus:ring-2 focus:ring-rustic-brown/20 outline-none resize-none" placeholder="Describe what you plan to sell..."></textarea>
+                </div>
+                <button type="submit" class="w-full bg-rustic-brown text-white py-4 rounded-lg font-semibold hover:bg-rustic-dark transition-colors">
+                    Submit Application
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="fixed bottom-4 right-4 bg-rustic-dark text-white px-6 py-4 rounded-lg shadow-2xl transform translate-y-20 opacity-0 transition-all duration-300 z-50 flex items-center gap-3">
+        <i data-lucide="check-circle" class="w-5 h-5 text-rustic-orange"></i>
+        <span id="toast-message">Message sent successfully!</span>
+    </div>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const closeMenuBtn = document.getElementById('close-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.remove('closed');
+            mobileMenu.classList.add('open');
+        });
+
+        closeMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.remove('open');
+            mobileMenu.classList.add('closed');
+        });
+
+        // Close mobile menu when clicking a link
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('open');
+                mobileMenu.classList.add('closed');
+            });
+        });
+
+        // Navbar Scroll Effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('shadow-md');
+            } else {
+                navbar.classList.remove('shadow-md');
+            }
+        });
+
+        // Gallery Filter
+        function filterGallery(category) {
+            const items = document.querySelectorAll('.gallery-item');
+            const buttons = document.querySelectorAll('.gallery-filter');
+            
+            // Update active button
+            buttons.forEach(btn => {
+                if (btn.dataset.filter === category) {
+                    btn.classList.add('bg-rustic-brown', 'text-white');
+                    btn.classList.remove('text-rustic-brown');
+                } else {
+                    btn.classList.remove('bg-rustic-brown', 'text-white');
+                    btn.classList.add('text-rustic-brown');
+                }
+            });
+
+            // Filter items
+            items.forEach(item => {
+                if (category === 'all' || item.dataset.category === category) {
+                    item.style.display = 'block';
+                    setTimeout(() => {
+                        item.style.opacity = '1';
+                        item.style.transform = 'scale(1)';
+                    }, 10);
+                } else {
+                    item.style.opacity = '0';
+                    item.style.transform = 'scale(0.9)';
+                    setTimeout(() => {
+                        item.style.display = 'none';
+                    }, 300);
+                }
+            });
+        }
+
+        // FAQ Toggle
+        function toggleFaq(button) {
+            const answer = button.nextElementSibling;
+            const icon = button.querySelector('i');
+            
+            if (answer.classList.contains('hidden')) {
+                answer.classList.remove('hidden');
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                answer.classList.add('hidden');
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+
+        // Vendor Modal
+        function openVendorModal() {
+            const modal = document.getElementById('vendor-modal');
+            const content = document.getElementById('vendor-modal-content');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            setTimeout(() => {
+                content.classList.remove('scale-95', 'opacity-0');
+                content.classList.add('scale-100', 'opacity-1');
+            }, 10);
+        }
+
+        function closeVendorModal() {
+            const modal = document.getElementById('vendor-modal');
+            const content = document.getElementById('vendor-modal-content');
+            content.classList.remove('scale-100', 'opacity-1');
+            content.classList.add('scale-95', 'opacity-0');
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+            }, 300);
+        }
+
+        // Close modal on outside click
+        document.getElementById('vendor-modal').addEventListener('click', (e) => {
+            if (e.target.id === 'vendor-modal') {
+                closeVendorModal();
+            }
+        });
+
+        // Form Submissions
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            const toastMessage = document.getElementById('toast-message');
+            toastMessage.textContent = message;
+            toast.classList.remove('translate-y-20', 'opacity-0');
+            
+            setTimeout(() => {
+                toast.classList.add('translate-y-20', 'opacity-0');
+            }, 3000);
+        }
+
+        function handleContactSubmit(e) {
+            e.preventDefault();
+            showToast('Message sent successfully! We\'ll get back to you soon.');
+            e.target.reset();
+        }
+
+        function handleVendorSubmit(e) {
+            e.preventDefault();
+            showToast('Application submitted! We\'ll review and contact you within 48 hours.');
+            closeVendorModal();
+            e.target.reset();
+        }
+
+        // Intersection Observer for Fade-in Animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        // Observe sections
+        document.querySelectorAll('section').forEach(section => {
+            section.style.opacity = '0';
+            observer.observe(section);
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
